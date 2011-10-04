@@ -1,0 +1,6 @@
+<h1>Events in ${calendar.name}:</h1>
+#{list items:events, as:'event'}
+	<ul>
+		${event.eventName}, starts at: ${event.startTime}, ends at: ${event.endTime}
+	</ul>
+#{/list}
