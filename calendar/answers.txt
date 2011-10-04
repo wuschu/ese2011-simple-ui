@@ -8,4 +8,4 @@
 Source: http://www.playframework.org/documentation/1.0.1/main
 
 2).
-## by using unit, functional or selenium tests.
+## by using unit, functional or selenium tests..
