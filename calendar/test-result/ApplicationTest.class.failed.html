@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Test results for BasicTest.class</title>
+        <title>Test results for ApplicationTest.class</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <style type="text/css">
             body {
@@ -61,26 +61,36 @@
     </head>
     <body>
         
-        <div id="header" class="block success">
+        <div id="header" class="block failed">
             <h1>
-                BasicTest.class
+                ApplicationTest.class
             </h1>
             <p>
-                SUCCESS
+                FAILED
             </p>
         </div>
         
         <div id="results">
             <table>
                                 <tr>
-                    <td width="20%" class="passed" valign="top">
-                        <span>aVeryImportantThingToTest</span>
+                    <td width="20%" class="failed" valign="top">
+                        <span>testThatIndexPageWorks</span>
                     </td>
-                    <td class="" valign="top">
-                                                                        Ok
-                                            </td>
+                    <td class="error" valign="top">
+                                                <strong>Failure, Response status  expected:&lt;200&gt; but was:&lt;302&gt;</strong>
+                                                <div class="source">
+                            <span>In /test/ApplicationTest.java, line 11 :</span>
+                        </div>
+                        <div class="sourceLine">
+                            <span>
+                                
+                                    		assertIsOk(response);
+                                
+                            </span>
+                        </div>
+                                                                                                                    </td>
                     <td width="5%" align="right" class="time" valign="top">
-                        0 ms
+                        6 ms
                     </td>
                 </tr>
                             </table>
