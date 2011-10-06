@@ -1,6 +1,7 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 <div align="right"><a href="http://localhost:9000/logout">Logout</a></div>
+
 <h1>${user.fullname}'s Calendars:</h1>
 #{list items:calendars, as:'calendar'}
 <ul>

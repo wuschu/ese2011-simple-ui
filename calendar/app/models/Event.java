@@ -10,6 +10,7 @@ public class Event {
 	public Date startTime, endTime;
 	DateFormat formatter = new SimpleDateFormat("dd.MM.yyyy, HH:mm");
 	public boolean isPublic;
+	String message = null;
 
 	public Event(String title, String startsAt, String endsAt, boolean isPublic) {
 		try {
@@ -18,7 +19,9 @@ public class Event {
 			this.endTime = formatter.parse(endsAt);
 			this.isPublic = isPublic;
 		} catch (ParseException e) {
+			message = "invalid input!!!";
 			e.printStackTrace();
+
 		}
 	}
 
